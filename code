@@ -1,0 +1,19 @@
+#include "stdafx.h"
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int a, b, c;
+	setlocale(LC_ALL, "Russian");
+	cout << "Введите год:" << endl;
+	cin >> a;
+	if (((a % 400 != 0) || ((a % 100 == 0)) && (a % 4 != 0)))
+
+		cout << "Год не високосный" << endl;
+	else
+		cout << "Год високосный" << endl;
+
+	return 0;
+}
+
